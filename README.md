@@ -122,7 +122,7 @@ regions | array | 国别 | - | -
 members | array | 成员 | - | -
 white_papers | array | 白皮书 | - | -
 investment_orgs | array | 投资机构 | - | -
-rating_orgs | array | 评级机构 | - | -
+~~rating_orgs~~ | array | ~~评级机构~~ | - | <font color=#FF0000>正在维护</font>
 
 ##### 响应示例
 ```
@@ -171,13 +171,13 @@ rating_orgs | array | 评级机构 | - | -
             "comment": "这里是一些说明信息"
         }
     ],
-    "renowned_industry": [
+    "investment_orgs": [
         {
             "id": 155,
             "name": "投资机构"
         }
     ],
-    "top_rating": [
+    "rating_orgs": [
         {
             "id": 8378,
             "rating_name": "评级机构",
