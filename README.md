@@ -6,9 +6,9 @@ Hotnode是区块链行业全球化数据服务和协作平台，致力于成为�
 
 以下为 API 的详细接口文档，如有疑问，请提交到 issues 中，我们会尽快回复。
 
-#### API 域名
+#### API 地址
 
-http://api.open.hotnode.cn
+https://api.open.hotnode.cn
 
 #### 0. 分页参数
 
