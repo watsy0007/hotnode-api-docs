@@ -1,4 +1,4 @@
-## Hotnode 公共 API 服务 v1.0
+## Hotnode 公共 API 服务 v1.1
 
 Hotnode是区块链行业全球化数据服务和协作平台，致力于成为区块链的Crunchbase+Bloomberg。通过数据挖掘和处理组建行业数据库，在此基础上进行模型建立和数据分析，设计AI数据产品，并对外进行API输出，打造行业基础设施；通过提供工具，服务行业各类角色，吸引入驻，形成一定粘性，成为区块链行业的全球化平台级产品。融入节点资本、金色财经、Hiwa、降维科技生态，扮演生态核心角色。
 
@@ -273,3 +273,170 @@ created_at | timestamp | 生成时间 | 1540108220 | -
     }
 ]
 ```
+
+#### 5. DAPP列表
+
+##### 地址
+/v1/dapps
+
+##### 方法
+HTTP/1.1 GET
+
+##### 请求参数
+暂无
+
+##### 响应参数
+字段 | 类型 | 释义 | 示例 | 备注
+---|---|---|---|---
+id | int| 编号 | 1 | -
+topic_id | int | 主题编号 | 254 | -
+title | string | 游戏名称 | EOS骑士 | -
+description | string | 简介 | - | -
+logo | url | 图标 | - | -
+language | string | 语言 | - | -
+source | string | 来源 | - | dapp_review
+homepage | url | 官网地址 | 上所公告 | 
+type | string | 类型 | dapp, dapp_update | -
+updated_at | timestamp | 更新时间 | 1540108220 | -
+created_at | timestamp | 生成时间 | 1540108220 | -
+tags | array | 标签 |  | -
+
+##### 响应示例
+```
+[
+    {
+        "id": 648,
+        "topic_id": 5,
+        "title": "EOS骑士",
+        "description": "这里是简介",
+        "logo": "",
+        "language": "zh_CN",
+        "source": "dapp_review",
+        "is_save": 2,
+        "homepage": "http://eosknights.io/",
+        "type": "dapp",
+        "updated_at": 1544092958,
+        "created_at": 1544092958,
+        "tags": [
+            {
+                "id": 17,
+                "name": "角色扮演"
+            }
+        ],
+        "topic": {
+            "id": 5,
+            "name": "eos"
+        }
+    }
+]
+```
+
+#### 5. DAPP详情
+
+##### 地址
+/v1/dapps/{id}
+
+##### 方法
+HTTP/1.1 GET
+
+##### 请求参数
+暂无
+
+##### 响应参数
+字段 | 类型 | 释义 | 示例 | 备注
+---|---|---|---|---
+id | int| 编号 | 1 | -
+topic_id | int | 主题编号 | 254 | -
+title | string | 游戏名称 | EOS骑士 | -
+description | string | 简介 | - | -
+logo | url | 图标 | - | -
+language | string | 语言 | - | -
+source | string | 来源 | - | dapp_review
+homepage | url | 官网地址 | 上所公告 | 
+type | string | 类型 | dapp, dapp_update | -
+updated_at | timestamp | 更新时间 | 1540108220 | -
+created_at | timestamp | 生成时间 | 1540108220 | -
+tags | array | 标签 |  | -
+topic | array | 主题 |  | -
+social_networks | array | 社交媒体 |  | -
+base_stats | array | 基础统计 |  | -
+week_base_stats | array | 每周统计 |  | -
+
+##### 响应示例
+```
+{
+    "id": 648,
+    "topic_id": 5,
+    "title": "EOS骑士",
+    "description": "这里是简介",
+    "logo": "",
+    "language": "zh_CN",
+    "source": "dapp_review",
+    "is_save": 2,
+    "homepage": "http://eosknights.io/",
+    "type": "dapp",
+    "updated_at": 1544092958,
+    "created_at": 1544092958,
+    "tags": [
+        {
+            "id": 17,
+            "name": "角色扮演"
+        }
+    ],
+    "topic": {
+        "id": 5,
+        "name": "eos"
+    },
+    "social_networks": [
+        {
+            "id": 511,
+            "dapp_id": 648,
+            "name": "twitter",
+            "link_url": "https://twitter.com/funcityone"
+        }
+    ],
+    "base_stats": null,
+    "week_base_stats": [
+        {
+            "id": 1,
+            "dapp_id": 648,
+            "balance": "372.50",
+            "dau_last_day": "84",
+            "volume_last_day": "1,459.82",
+            "volume_last_week": "9,815.48",
+            "tx_last_day": "6,757",
+            "tx_last_week": "49515",
+            "date": "2018-12-09",
+            "updated_at": 1544082041,
+            "created_at": 1544065696
+        }
+    ]
+}
+```
+#### 5. DAPP主题列表
+
+##### 地址
+/v1/dapps/topics
+
+##### 方法
+HTTP/1.1 GET
+
+##### 请求参数
+暂无
+
+##### 响应参数
+字段 | 类型 | 释义 | 示例 | 备注
+---|---|---|---|---
+id | int| 编号 | 1 | -
+name | string | 主题名称 | tron | -
+
+##### 响应示例
+```
+[
+    {
+        "id": 6,
+        "name": "tron"
+    }
+]
+```
+
