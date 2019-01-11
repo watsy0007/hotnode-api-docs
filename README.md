@@ -370,8 +370,14 @@ created_at | timestamp | 生成时间 | 1540108220 | -
 tags | array | 标签 |  | -
 topic | array | 主题 |  | -
 social_networks | array | 社交媒体 |  | -
-base_stats | array | 基础统计 |  | -
-week_base_stats | array | 每周统计 |  | -
+base_stats | object | 基础统计 |  | -
+week\_base\_stats | array | 每周统计 |  | -
+balance | string | 余额 |  | -
+dau\_last\_day | string | 24活跃用户 |  | -
+volume\_last\_day | string | 24h交易额 |  | -
+volume\_last\_week | string | 7d交易额 |  | -
+tx\_last\_day | string | 24h交易笔数 |  | -
+tx\_last\_week | string | 7d交易笔数 |  | -
 
 ##### 响应示例
 ```
@@ -406,20 +412,110 @@ week_base_stats | array | 每周统计 |  | -
             "link_url": "https://twitter.com/funcityone"
         }
     ],
-    "base_stats": null,
+    "base_stats": {
+        "id":1,
+        "dapp_id":648,
+        "balance":"372.50",
+        "dau_last_day":"84",
+        "volume_last_day":"1,459.82",
+        "volume_last_week":"9,815.48",
+        "tx_last_day":"6,757",
+        "tx_last_week":"49515",
+        "date":"2018-12-09",
+        "updated_at":1544082041,
+        "created_at":1544065696
+    },
     "week_base_stats": [
         {
-            "id": 1,
-            "dapp_id": 648,
-            "balance": "372.50",
-            "dau_last_day": "84",
-            "volume_last_day": "1,459.82",
-            "volume_last_week": "9,815.48",
-            "tx_last_day": "6,757",
-            "tx_last_week": "49515",
-            "date": "2018-12-09",
-            "updated_at": 1544082041,
-            "created_at": 1544065696
+            "id":1,
+            "dapp_id":648,
+            "balance":"372.50",
+            "dau_last_day":"84",
+            "volume_last_day":"1,459.82",
+            "volume_last_week":"9,815.48",
+            "tx_last_day":"6,757",
+            "tx_last_week":"49515",
+            "date":"2018-12-09",
+            "updated_at":1544082041,
+            "created_at":1544065696
+        },
+        {
+            "id":2,
+            "dapp_id":648,
+            "balance":"29.88",
+            "dau_last_day":"68",
+            "volume_last_day":"16.76",
+            "volume_last_week":"114.61",
+            "tx_last_day":"137",
+            "tx_last_week":"1138",
+            "date":"2018-12-08",
+            "updated_at":1544082038,
+            "created_at":1544082038
+        },
+        {
+            "id":3,
+            "dapp_id":648,
+            "balance":"0.00",
+            "dau_last_day":"66",
+            "volume_last_day":"0.00",
+            "volume_last_week":"0.00",
+            "tx_last_day":"212",
+            "tx_last_week":"786",
+            "date":"2018-12-07",
+            "updated_at":1544082038,
+            "created_at":1544082038
+        },
+        {
+            "id":4,
+            "dapp_id":648,
+            "balance":"0.00",
+            "dau_last_day":"73",
+            "volume_last_day":"0.00",
+            "volume_last_week":"0.00",
+            "tx_last_day":"2,866",
+            "tx_last_week":"17576",
+            "date":"2018-12-06",
+            "updated_at":1544082040,
+            "created_at":1544082040
+        },
+        {
+            "id":5,
+            "dapp_id":648,
+            "balance":"708.26",
+            "dau_last_day":"84",
+            "volume_last_day":"0.61",
+            "volume_last_week":"17.11",
+            "tx_last_day":"102",
+            "tx_last_week":"454",
+            "date":"2018-12-05",
+            "updated_at":1544082043,
+            "created_at":1544082043
+        },
+        {
+            "id":6,
+            "dapp_id":648,
+            "balance":"21.69",
+            "dau_last_day":"104",
+            "volume_last_day":"4.78",
+            "volume_last_week":"69.88",
+            "tx_last_day":"167",
+            "tx_last_week":"2102",
+            "date":"2018-12-04",
+            "updated_at":1544082045,
+            "created_at":1544082045
+        },
+        {
+            "id":7,
+            "dapp_id":648,
+            "balance":"9.05",
+            "dau_last_day":"59",
+            "volume_last_day":"17.51",
+            "volume_last_week":"95.95",
+            "tx_last_day":"162",
+            "tx_last_week":"940",
+            "date":"2018-12-03",
+            "updated_at":1544082096,
+            "created_at":1544082096
         }
     ]
 }
