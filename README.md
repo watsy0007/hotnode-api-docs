@@ -375,9 +375,7 @@ week\_base\_stats | array | 每周统计 |  | -
 balance | string | 余额 |  | -
 dau\_last\_day | string | 24活跃用户 |  | -
 volume\_last\_day | string | 24h交易额 |  | -
-volume\_last\_week | string | 7d交易额 |  | -
 tx\_last\_day | string | 24h交易笔数 |  | -
-tx\_last\_week | string | 7d交易笔数 |  | -
 
 ##### 响应示例
 ```
