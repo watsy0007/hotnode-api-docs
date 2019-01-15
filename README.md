@@ -365,8 +365,7 @@ language | string | 语言 | - | -
 source | string | 来源 | - | dapp_review
 homepage | url | 官网地址 | 上所公告 | 
 type | string | 类型 | dapp, dapp_update | -
-updated_at | timestamp | 更新时间 | 1540108220 | -
-created_at | timestamp | 生成时间 | 1540108220 | -
+date | timestamp | 时间 | 2018-12-09 | -
 tags | array | 标签 |  | -
 topic | array | 主题 |  | -
 social_networks | array | 社交媒体 |  | -
