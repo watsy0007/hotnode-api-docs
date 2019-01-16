@@ -533,7 +533,7 @@ HTTP/1.1 GET
 ---|---|---|---|---
 id | int| 编号 | 1 | -
 name | string | 主题名称 | tron | -
-order | int | 排序 | tron | -
+order | int | 排序 | 100 | -
 
 
 ##### 响应示例
